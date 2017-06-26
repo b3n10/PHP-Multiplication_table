@@ -2,14 +2,14 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>AJAX</title>
-<style type="text/css">
-td {
-	border: 1px solid #000;
-	padding: 15px;
-		text-align: center;
-}
-</style>
+		<title>Multiplication Table</title>
+		<style type="text/css">
+		td {
+			border: 1px solid #000;
+			padding: 15px;
+				text-align: center;
+		}
+		</style>
 	</head>
 	<body>
 		<label>Enter only integer:</label>
@@ -26,7 +26,7 @@ td {
 						document.getElementById('result').innerHTML = this.responseText;
 					}
 				};
-				ajax.open("GET", 'echo.php?number=' + number, true);
+				ajax.open("GET", 'multiplication_script.php?number=' + number, true);
 				ajax.send();
 			}
 		</script>
